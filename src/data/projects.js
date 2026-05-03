@@ -105,8 +105,24 @@ export const projects = [
     demo: null,
     featured: true,
     placeholderType: "streaming",
-    accentColor: "#ff6b35",
+    accentColor: "#00ffcc",
     icon: "video",
+  },
+  {
+    id: "nikat_landing",
+    title: "Nikat Landing Page — Industrial Catalyst B2B",
+    description:
+      "Professional conversion-focused landing page for industrial catalyst company. Astro 5 + Tailwind CSS with responsive design, form automation, and SEO optimization. 3D model animations, technical specifications, and ROI calculators.",
+    longDescription:
+      "Enterprise landing page targeting manufacturing prospects. Built with Astro for static generation and performance. Features custom design system, accessibility-first approach (WCAG AAA), semantic HTML, schema.org structured data, and lead generation forms. Includes 3D catalyst model visualization and interactive ROI calculator.",
+    tech: ["Astro", "TypeScript", "Tailwind CSS", "3D Graphics", "SEO", "Forms"],
+    github: "https://github.com/pepe587/nikat-landing-page",
+    demo: "https://nikatrecycling.com/",
+    featured: true,
+    placeholderType: "catalyst",
+    accentColor: "#D4D414",
+    builtWith: "Claude Code",
+    icon: "server",
   },
   {
     id: "nmap42",
@@ -152,5 +168,37 @@ export const projects = [
     placeholderType: "code",
     accentColor: "#00ffcc",
     icon: "book",
+  },
+  {
+    id: "personal_trainer",
+    title: "Personal Trainer App",
+    description:
+      "Full-stack mobile fitness platform. Flutter cross-platform app (iOS/Android/Web) with offline-first architecture, magic-link passwordless auth, and Stripe payments. FastAPI backend with PostgreSQL, async architecture, and Firebase notifications.",
+    longDescription:
+      "Complete fitness application with Flutter frontend (Riverpod state management, Drift local cache, clean architecture) and FastAPI backend (async/await, dependency injection, rate limiting). Features dual authentication flows (trainer/client), payment intent creation, device-bound tokens, FCM integration, and real-time workout tracking. Production-grade architecture with error handling, validation, and structured logging.",
+    tech: ["Flutter", "Python", "FastAPI", "PostgreSQL", "Stripe", "Firebase", "Riverpod", "Clean Architecture"],
+    github: null,
+    demo: null,
+    featured: true,
+    placeholderType: "fitness",
+    accentColor: "#00ffcc",
+    builtWith: "Claude Code",
+    icon: "activity",
+  },
+  {
+    id: "sergio_landing",
+    title: "Sergio Landing Page — Personal Trainer",
+    description:
+      "Professional conversion-focused landing page for personal trainer Sergio. Built with Astro 5 + Tailwind CSS featuring responsive design, SEO optimization, contact form, and fast static performance. Deployed on Vercel.",
+    longDescription:
+      "Enterprise landing page targeting fitness prospects. Built with Astro for optimal performance and SEO. Features responsive design for all devices, accessibility-first approach, semantic HTML, schema.org structured data, and serverless contact form function. Includes complete sections: hero, about trainer, services, pricing plans, client testimonials, and contact form with email integration.",
+    tech: ["Astro", "TypeScript", "Tailwind CSS", "Vercel", "Serverless Functions", "SEO"],
+    github: "https://github.com/pepe587/sergio-landing-page",
+    demo: null,
+    featured: true,
+    placeholderType: "catalyst",
+    accentColor: "#fbbf24",
+    builtWith: "Claude Code",
+    icon: "users",
   },
 ];

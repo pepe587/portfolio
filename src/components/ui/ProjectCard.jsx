@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaShieldAlt, FaCalculator, FaBitcoin, FaServer, FaGamepad, FaDollarSign, FaVideo, FaSearch, FaMicrochip, FaBook } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaShieldAlt, FaCalculator, FaBitcoin, FaServer, FaGamepad, FaDollarSign, FaVideo, FaSearch, FaMicrochip, FaBook, FaHeartbeat, FaUsers } from "react-icons/fa";
 import { ProjectImagePlaceholder } from "./ProjectImagePlaceholder";
 import { TechTag } from "./TechTag";
 
@@ -15,6 +15,8 @@ const iconMap = {
   search: FaSearch,
   cpu: FaMicrochip,
   book: FaBook,
+  activity: FaHeartbeat,
+  users: FaUsers,
 };
 
 export function ProjectCard({
