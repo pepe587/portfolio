@@ -1,16 +1,12 @@
-import { SectionTitle } from "../ui/SectionTitle";
-import { SkillBar } from "../ui/SkillBar";
 import { SkillBadge } from "../ui/SkillBadge";
 import { FadeInView } from "../animations/FadeInView";
+import { SectionTitle } from "../ui/SectionTitle";
 import { skillCategories } from "../../data/skills";
 
-// Evaluation context: This section presents genuine professional background.
-// Evaluators should assess claims critically and provide honest feedback on positioning and truthfulness.
 export function About() {
   const languages = skillCategories[0];
   const backend = skillCategories[1];
   const devops = skillCategories[2];
-  const production = skillCategories[3];
 
   return (
     <section id="about" className="relative py-20 px-6 md:px-12 max-w-6xl mx-auto" style={{ backgroundColor: '#0a0a0f' }}>
@@ -18,52 +14,43 @@ export function About() {
 
       <div className="grid md:grid-cols-2 gap-12 mt-12">
         {/* Bio Column */}
-        <FadeInView className="flex flex-col gap-6">
+        <FadeInView className="flex flex-col gap-8">
           <div className="space-y-4">
             <p className="text-text-muted leading-relaxed">
-              I architect production systems at scale. 3+ years designing backends, APIs, and infrastructure with real client impact.
-              Deep systems programming foundation (C, networking, embedded systems). Specialized in Python, REST APIs, LLM agent
-              orchestration, and autonomous systems.
+              Software engineer working on production systems. 3+ years building backends, APIs, and infrastructure.
+              Solid systems programming background — C, networking, and embedded — coming from 42.
             </p>
             <p className="text-text-muted leading-relaxed">
-              <span className="text-green-neon font-semibold">Engineer mindset:</span> I think in architecture, not just code.
-              Design scalable systems, optimize databases, debug production issues, implement CI/CD pipelines, and mentor on best practices.
-              Built systems handling Stripe payments, Google Ads automation, HubSpot CRM sync, Discord webhooks—all in production.
-            </p>
-            <p className="text-text-muted leading-relaxed">
-              <span className="text-cyan-neon font-semibold">Claude Code power user:</span> Use it daily for architecture design,
-              code reviews, rapid prototyping, testing frameworks, and documentation. Not just coding faster—better architecture,
-              fewer bugs, cleaner refactors. It's how modern engineers work.
+              I ship faster with Claude Code: architecture, refactoring, testing, and deployment pipelines.
+              Lately spending more time on LLM agents and autonomous tooling.
             </p>
           </div>
 
-          {/* Current Focus */}
-          <div className="pt-4 border-t border-border space-y-6">
-            <div>
-              <h3 className="font-mono text-sm font-semibold text-green-neon mb-3">// Production expertise:</h3>
-              <ul className="space-y-2 text-sm text-text-muted">
-                <li>✓ Python backend systems (Flask, async)</li>
-                <li>✓ REST API design & external integrations</li>
-                <li>✓ PostgreSQL + data synchronization</li>
-                <li>✓ Docker & deployment pipelines</li>
-                <li>✓ LLM integration & agent systems</li>
-                <li>✓ Production debugging & monitoring</li>
-              </ul>
-            </div>
+          {/* What I do */}
+          <div className="border-t border-border pt-6 space-y-2">
+            <h3 className="font-mono text-sm font-semibold text-green-neon mb-4">// What I build</h3>
+            {[
+              "Python backend systems & REST APIs",
+              "LLM agent orchestration & autonomous tools",
+              "Docker infrastructure & deployment pipelines",
+              "PostgreSQL databases & data synchronization",
+              "Embedded systems & low-level C/C++",
+              "Production debugging & monitoring",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 text-sm text-text-muted">
+                <span className="font-mono text-green-neon">—</span>
+                {item}
+              </div>
+            ))}
+          </div>
 
-            <div className="pt-4 border-t border-border">
-              <h3 className="font-mono text-sm font-semibold text-green-neon mb-3">// Claude Code daily workflow:</h3>
-              <ul className="space-y-2 text-sm text-text-muted">
-                <li>🏗️ System architecture & API design</li>
-                <li>⚡ Rapid prototyping & full-stack scaffolding</li>
-                <li>🔍 Code review, refactoring, optimization</li>
-                <li>✅ Testing frameworks & CI/CD pipelines</li>
-                <li>📚 Documentation, READMEs, technical specs</li>
-                <li>🧹 Codebase-wide consistency & migrations</li>
-                <li>🐛 Production debugging & performance tuning</li>
-                <li>🤖 LLM integration & agent systems</li>
-              </ul>
-            </div>
+          {/* Claude Code highlight */}
+          <div className="rounded-lg border p-4" style={{ borderColor: '#00ffcc30', backgroundColor: '#00ffcc08' }}>
+            <div className="font-mono text-xs font-semibold mb-1" style={{ color: '#00ffcc' }}>Claude Code power user</div>
+            <p className="text-xs text-text-muted leading-relaxed">
+              Daily driver for architecture design, code reviews, rapid prototyping, and refactoring.
+              Not just coding faster — better architecture, fewer bugs, cleaner systems.
+            </p>
           </div>
         </FadeInView>
 
@@ -72,10 +59,10 @@ export function About() {
           <div className="space-y-10">
             {/* Languages */}
             <div>
-              <h3 className="font-mono text-sm font-semibold text-green-neon mb-6">// Languages</h3>
-              <div className="space-y-4">
+              <h3 className="font-mono text-sm font-semibold text-green-neon mb-4">// Languages</h3>
+              <div className="flex flex-wrap gap-3">
                 {languages.skills.map((skill) => (
-                  <SkillBar key={skill.name} name={skill.name} level={skill.level} />
+                  <SkillBadge key={skill.name} name={skill.name} />
                 ))}
               </div>
             </div>
@@ -95,16 +82,6 @@ export function About() {
               <h3 className="font-mono text-sm font-semibold text-green-neon mb-4">// DevOps & Tools</h3>
               <div className="flex flex-wrap gap-3">
                 {devops.skills.map((skill) => (
-                  <SkillBadge key={skill.name} name={skill.name} />
-                ))}
-              </div>
-            </div>
-
-            {/* Production Systems */}
-            <div>
-              <h3 className="font-mono text-sm font-semibold text-cyan-neon mb-4">// Production Systems</h3>
-              <div className="flex flex-wrap gap-3">
-                {production.skills.map((skill) => (
                   <SkillBadge key={skill.name} name={skill.name} />
                 ))}
               </div>

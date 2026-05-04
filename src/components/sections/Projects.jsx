@@ -14,9 +14,9 @@ export function Projects() {
       <SectionTitle number="02" title="Featured Projects" />
 
       {/* Featured Grid - 2 columns, larger cards */}
-      <div className="grid md:grid-cols-2 gap-8 mb-16">
+      <div className="grid md:grid-cols-2 gap-8 mb-16 items-stretch">
         {featured.map((project, index) => (
-          <SlideInView key={project.id} delay={index * 0.1}>
+          <SlideInView key={project.id} delay={index * 0.1} className="h-full">
             <ProjectCard {...project} />
           </SlideInView>
         ))}
@@ -26,9 +26,9 @@ export function Projects() {
       {other.length > 0 && (
         <>
           <h3 className="text-2xl font-bold mb-8 mt-16 text-cyan-neon">Other Projects</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {other.map((project, index) => (
-              <SlideInView key={project.id} delay={index * 0.1}>
+              <SlideInView key={project.id} delay={index * 0.1} className="h-full">
                 <ProjectCard {...project} />
               </SlideInView>
             ))}

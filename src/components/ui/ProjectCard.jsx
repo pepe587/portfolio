@@ -36,7 +36,7 @@ export function ProjectCard({
     <motion.div
       whileHover={{ scale: 1.02 }}
       transition={{ duration: 0.2 }}
-      className="overflow-hidden rounded-lg border border-border bg-surface hover:border-cyan-neon/60 transition-all duration-300"
+      className="overflow-hidden rounded-lg border border-border bg-surface hover:border-cyan-neon/60 transition-all duration-300 h-full flex flex-col"
       style={{
         "--hover-color": accentColor,
       }}
@@ -45,7 +45,7 @@ export function ProjectCard({
       <ProjectImagePlaceholder type={placeholderType} accentColor={accentColor} title={title} />
 
       {/* Content */}
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <div className="flex items-start justify-between mb-3">
           <div className="flex items-center gap-3">
             {icon && (
@@ -71,7 +71,7 @@ export function ProjectCard({
         </div>
 
         {/* Links */}
-        <div className="flex gap-3">
+        <div className="flex gap-3 mt-auto">
           <motion.a
             href={github}
             target="_blank"
