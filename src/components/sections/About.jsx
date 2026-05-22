@@ -7,6 +7,7 @@ export function About() {
   const languages = skillCategories[0];
   const backend = skillCategories[1];
   const devops = skillCategories[2];
+  const cyber = skillCategories[4];
 
   return (
     <section id="about" className="relative py-20 px-6 md:px-12 max-w-6xl mx-auto" style={{ backgroundColor: '#0a0a0f' }}>
@@ -21,8 +22,8 @@ export function About() {
               Solid systems programming background — C, networking, and embedded — coming from 42.
             </p>
             <p className="text-text-muted leading-relaxed">
-              I ship faster with Claude Code: architecture, refactoring, testing, and deployment pipelines.
-              Lately spending more time on LLM agents and autonomous tooling.
+              Certified Blue Team Junior Analyst with hands-on skills in threat hunting, digital forensics, OSINT,
+              and network analysis. Interested in building secure systems and defensive tooling.
             </p>
           </div>
 
@@ -35,7 +36,8 @@ export function About() {
               "Docker infrastructure & deployment pipelines",
               "PostgreSQL databases & data synchronization",
               "Embedded systems & low-level C/C++",
-              "Production debugging & monitoring",
+              "Threat hunting & network traffic analysis",
+              "Digital forensics & incident investigation",
             ].map((item) => (
               <div key={item} className="flex items-center gap-2 text-sm text-text-muted">
                 <span className="font-mono text-green-neon">—</span>
@@ -44,13 +46,16 @@ export function About() {
             ))}
           </div>
 
-          {/* Claude Code highlight */}
-          <div className="rounded-lg border p-4" style={{ borderColor: '#00ffcc30', backgroundColor: '#00ffcc08' }}>
-            <div className="font-mono text-xs font-semibold mb-1" style={{ color: '#00ffcc' }}>Claude Code power user</div>
+          {/* BTJA Certificate */}
+          <div className="rounded-lg border p-4" style={{ borderColor: '#1e40af40', backgroundColor: '#1e3a8a08' }}>
+            <div className="flex items-center gap-2 mb-1">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span className="font-mono text-xs font-semibold" style={{ color: '#3b82f6' }}>Blue Team Junior Analyst — Security Blue Team</span>
+            </div>
             <p className="text-xs text-text-muted leading-relaxed">
-              Daily driver for architecture design, code reviews, rapid prototyping, and refactoring.
-              Not just coding faster — better architecture, fewer bugs, cleaner systems.
+              OSINT · Digital Forensics · Vulnerability Management · DarkWeb Operations · Threat Hunting · Network Analysis
             </p>
+            <p className="font-mono text-xs mt-1" style={{ color: '#64748b' }}>Cert ID: 125634498 · 2025-09-25</p>
           </div>
         </FadeInView>
 
@@ -82,6 +87,16 @@ export function About() {
               <h3 className="font-mono text-sm font-semibold text-green-neon mb-4">// DevOps & Tools</h3>
               <div className="flex flex-wrap gap-3">
                 {devops.skills.map((skill) => (
+                  <SkillBadge key={skill.name} name={skill.name} />
+                ))}
+              </div>
+            </div>
+
+            {/* Cybersecurity */}
+            <div>
+              <h3 className="font-mono text-sm font-semibold mb-4" style={{ color: '#3b82f6' }}>// Cybersecurity</h3>
+              <div className="flex flex-wrap gap-3">
+                {cyber.skills.map((skill) => (
                   <SkillBadge key={skill.name} name={skill.name} />
                 ))}
               </div>

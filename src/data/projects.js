@@ -3,9 +3,9 @@ export const projects = [
     id: "oa",
     title: "OA — Autonomous Offense Agent",
     description:
-      "Production-grade autonomous pentesting platform with AI-powered vulnerability detection and exploitation automation. Features 24/7 scanning, LLM agent reasoning, and real-time alerting. Built & architected with Claude Code.",
+      "Autonomous offensive security agent with LLM-driven vulnerability detection and exploitation automation. Features continuous scanning, AI reasoning over findings, and real-time alerting — built to understand attacker behavior from the inside.",
     longDescription:
-      "Built with Python orchestrator, Flask dashboards, DeepSeek-R1 LLM integration, and comprehensive exploitation tooling. Includes API, Grafana monitoring, and PostgreSQL findings database.",
+      "Python orchestrator + Flask dashboard + DeepSeek-R1 LLM integration. Findings stored in PostgreSQL, monitored via Grafana. Designed to simulate real attack chains and generate structured reports for blue team analysis.",
     tech: ["Python", "Flask", "PostgreSQL", "Docker", "API Integration", "LLM Agents"],
     github: "https://github.com/pepe587/OA",
     demo: null,
@@ -128,9 +128,9 @@ export const projects = [
     id: "nmap42",
     title: "nmap-42",
     description:
-      "A partial reimplementation of the nmap network scanner in C. Supports SYN, NULL, FIN, XMAS, ACK, and UDP scan types.",
+      "Reimplementation of nmap in C using raw POSIX sockets. Supports SYN, NULL, FIN, XMAS, ACK, and UDP scans — built to deeply understand how port scanning and TCP/IP fingerprinting work at the packet level.",
     longDescription:
-      "Deep networking project using raw POSIX sockets and ICMP/TCP packet crafting.",
+      "Low-level network security tooling: raw socket programming, ICMP/TCP packet crafting, and scan type logic from scratch. Useful for understanding what detection tools are actually seeing on the wire.",
     tech: ["C", "Networking", "Raw Sockets", "POSIX"],
     github: "https://github.com/pepe587/nmap-42",
     demo: null,

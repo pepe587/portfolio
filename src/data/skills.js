@@ -42,4 +42,15 @@ export const skillCategories = [
       { name: "Performance Optimization", level: 72 },
     ],
   },
+  {
+    category: "Cybersecurity",
+    skills: [
+      { name: "Threat Hunting", level: 75 },
+      { name: "Digital Forensics", level: 72 },
+      { name: "OSINT", level: 78 },
+      { name: "Vulnerability Management", level: 74 },
+      { name: "Network Analysis", level: 76 },
+      { name: "DarkWeb Operations", level: 68 },
+    ],
+  },
 ];

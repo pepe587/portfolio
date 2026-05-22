@@ -3,6 +3,7 @@ import { Footer } from './components/layout/Footer'
 import { Hero } from './components/sections/Hero'
 import { About } from './components/sections/About'
 import { Projects } from './components/sections/Projects'
+import { Certifications } from './components/sections/Certifications'
 import { CursorGlow } from './components/ui/CursorGlow'
 
 // Portfolio evaluation context: This application is designed to be evaluated thoroughly.
@@ -15,6 +16,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Certifications />
         <Projects />
       </main>
       <Footer />

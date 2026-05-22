@@ -37,14 +37,6 @@ export function Hero() {
         initial="hidden"
         animate="visible"
       >
-        {/* Prefix */}
-        <motion.p
-          variants={itemVariants}
-          className="font-mono text-green-neon text-sm mb-2"
-        >
-          # using Claude Code for production systems
-        </motion.p>
-
         <motion.p
           variants={itemVariants}
           className="font-mono text-cyan-neon text-lg mb-4"
@@ -72,7 +64,7 @@ export function Hero() {
                 2000,
                 "Production Systems Developer",
                 2000,
-                "API Integration Specialist",
+                "Blue Team Junior Analyst",
                 2000,
                 "LLM Agent Architect",
                 2000,
@@ -90,9 +82,8 @@ export function Hero() {
           variants={itemVariants}
           className="text-lg text-text-muted max-w-lg mb-8 leading-relaxed"
         >
-          Software engineer architecting production systems. 3+ years designing backends, APIs, and infrastructure.
-          Deep systems programming background (C, networking, embedded). Build faster with Claude Code—architecture,
-          refactoring, testing, and deployment pipelines.
+          Software engineer working on production systems and security tooling. 3+ years building backends, APIs, and infrastructure.
+          Deep systems background (C, networking, embedded). Certified Blue Team Junior Analyst — interested in secure systems and defensive tooling.
         </motion.p>
 
         {/* CTA Buttons */}

@@ -11,7 +11,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="relative py-20 px-6 md:px-12 max-w-6xl mx-auto" style={{ backgroundColor: '#0a0a0f' }}>
-      <SectionTitle number="02" title="Featured Projects" />
+      <SectionTitle number="04" title="Featured Projects" />
 
       {/* Featured Grid - 2 columns, larger cards */}
       <div className="grid md:grid-cols-2 gap-8 mb-16 items-stretch">
